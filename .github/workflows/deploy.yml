@@ -61,7 +61,7 @@ jobs:
           username: "${{ secrets.VM_INSTANCE_USERNAME }}"
           key: "${{ secrets.VM_SSH_PRIVATE_KEY }}"
           script: |
-            IMAGE_NAME=docker.io/vithsutratechnologies/biometric-message-conusumer:latest
+            IMAGE_NAME=docker.io/vithsutratechnologies/biometric-message-consumer:latest
             docker pull $IMAGE_NAME
             docker ps | grep biometric-message-consumer | awk '{print $1}' | xargs -I {} docker kill {}
             docker ps -a | grep biometric-message-consumer | awk '{print $1}' | xargs -I {} docker rm {}
