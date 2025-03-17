@@ -33,7 +33,7 @@ jobs:
         run: |
           echo "SERVER_MODE=${{ secrets.SERVER_MODE }}" >> .env
           echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env
-          echo "KAFKA_BROKER_1_ADDRESS=${{ secrets.KAFKA_BROKER_1_ADDRESS }}" >> .env
+          echo "KAFKA_BROKER_1_ADDRESS=${{ secretes.KAFKA_BROKER_1_ADDRESS }}" >> .env
           echo "KAFKA_CONSUMER_GROUP_ID=${{ secretes.KAFKA_CONSUMER_GROUP_ID }}" >> .env
           echo "KAFKA_TOPIC_NAME=${{ secrets.KAFKA_TOPIC_NAME }}" >> .env
 
